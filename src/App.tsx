@@ -22,7 +22,7 @@ function App() {
 /*USAR GRADIENTE AL MOVER EL MOUSE*/
     setGradiantBackground();
 
-    const moveGradiant = (event) => {
+    const moveGradiant = (event: MouseEvent) => {
       const winWidth = window.innerWidth;
       const winHeight = window.innerHeight;
 
