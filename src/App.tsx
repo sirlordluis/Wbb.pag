@@ -4,7 +4,7 @@ import ScrollContent from './components/ScrollContent';
 import Navbar from './components/Navbar';
 
 function App() {
-  const appRef = useRef(null);
+  const appRef = useRef<HTMLDivElement>(null);
 /*COLOCAR EL GRADIENTE AL INICIO*/
   useEffect(() => {
     const setGradiantBackground = () => {
