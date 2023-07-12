@@ -4,7 +4,7 @@ import ScrollContent from './components/ScrollContent';
 import Navbar from './components/Navbar';
 
 function App() {
-  const appRef = useRef<HTMLDivElement>(null);
+  const appRef = useRef(null);
 /*COLOCAR EL GRADIENTE AL INICIO*/
   useEffect(() => {
     const setGradiantBackground = () => {
@@ -22,7 +22,7 @@ function App() {
 /*USAR GRADIENTE AL MOVER EL MOUSE*/
     setGradiantBackground();
 
-    const moveGradiant = (event: MouseEvent) => {
+    const moveGradiant = (event) => {
       const winWidth = window.innerWidth;
       const winHeight = window.innerHeight;
 
@@ -57,3 +57,4 @@ function App() {
 }
 
 export default App;
+
