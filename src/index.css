@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+  filter: contrast(350%) brightness(100%);
+  background: 
+	linear-gradient(
+    to bottom right, 
+    rgba(41,37,52,1), 
+    rgba(117,111,135,0.47)
+    ),
+    radial-gradient(
+      at var(--mouse-x) var(--mouse-y),
+      rgba(255,255,255,0.5), 
+      rgba(0,0,0,0.5)
+    ),
+	  url("data:image/svg+xml,%3Csvg viewBox='0 0 341 341' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  height: 100vh;
+  /*COLOCAR EN EL FONDO EL GRADIENTE*/
+  position: fixed; /* Agregado el estilo position: fixed */
+  top: 0; /* Asegura que el fondo ocupe toda la ventana */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto; /* Agregado el estilo overflow: auto; */
+  z-index: -1;
+
+}
+
+.custom-font {
+  font-family: 'Fira Code', monospace;
+  position: fixed;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 10vw;
+  line-height: 1;
+  color: rgba(200,200,200,.1);
+  background: linear-gradient(rgba(200,200,200,0), rgba(200,200,200,0.07));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-weight: 900;
+}
