@@ -24,6 +24,7 @@ const Skills = () => {
           <div className="flex flex-wrap gap-5 justify-between items-center text-white">
             {/*left */}
             <div className="mx-auto">
+                
                 <div className="flex flex-wrap gap-3 my-12 translate-x-[-5rem]">
                     <div className="grid grid-cols-4 grid-rows-4 gap-x-3 gap-y-3 rotate-45 my-20 ">
                         {/*COLUMNA 1*/}
@@ -64,6 +65,7 @@ const Skills = () => {
                     </div> 
                     </>
                 })}
+                <img src="https://i.imgur.com/SlsB32n.png" alt="" />
             </div>
 
           </div>
