@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "asciinema-player": "^3.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-asciinema-player": "^1.0.3",
+    "react-dom": "^18.2.0",
+    "vue3-asciinema-player": "^0.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react';
 import './styles/App.css';
-import ScrollContent from './components/ScrollContent';
 import Navbar from './components/Navbar';
+import About from './components/first_section_about';
+import Projects from './components/projects_section';
+import Skills from './components/skills_section';
 
 function App() {
   const appRef = useRef(null);
@@ -42,16 +44,17 @@ function App() {
 
   return (
     <>
-      
       <div className="app" id="app" ref={appRef} data-scroll-container>
         <div className="blink justify-center flex align-center">
           
         </div>
       </div>
-      
-      <h1 className='custom-font'>Welcome!</h1>
       <Navbar/>
-      <ScrollContent />
+      <About />
+      <Projects/>
+      <Skills/>
+      <h1 className='custom-font'>Welcome!</h1>
+      
     </>
   );
 }
