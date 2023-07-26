@@ -1,14 +1,18 @@
 interface ProjectCardProps {
-    img: string;
-    langs: string[];
-    title: string;
-    disc: string;
-  }
-  
+  img: string;
+  langs: string[];
+  title: string;
+  disc: string;
+}
+
 const ProjectCard = ({ img, langs, title, disc }: ProjectCardProps) => {
   return (
     <>
-      <div  data-aos="fade-up" data-aos-delay="300" className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="300"
+        className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0"
+      >
         {/* img */}
         <div className="">
           <img className=" w-full" src={img} alt="" />

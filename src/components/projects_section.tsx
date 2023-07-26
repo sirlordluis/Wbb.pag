@@ -1,7 +1,6 @@
 import ProjectCard from "./project_card";
 
 const Projects = () => {
-
   const projects = [
     {
       img: "https://i.imgur.com/QKN0RVE.png",
@@ -21,12 +20,11 @@ const Projects = () => {
       title: "Yahoo respuestas",
       disc: "Get answers to your kahoot quiz ",
     },
-    
-    
   ];
 
-    return (
-      <>
+  return (
+    <>
+      <section className="py-10"id="work">
         <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
           {/* top */}
           <div className="flex justify-between items-center gap-5">
@@ -39,25 +37,30 @@ const Projects = () => {
             </div>
             {/* right */}
             <div className="text-white font-medium">
-              <a href="">
+              <a href="https://github.com/sirlordluis?tab=repositories">
                 <span>View all &gt;_</span>
               </a>
             </div>
           </div>
           {/* bottom */}
           <div className="flex flex-wrap justify-between gap-4 my-12">
-            {projects.map(({img, langs, title, disc})=>{
+            {projects.map(({ img, langs, title, disc }) => {
               return (
                 <>
-                  <ProjectCard img = {img} langs = {langs} title = {title} disc = {disc}/>
+                  <ProjectCard
+                    img={img}
+                    langs={langs}
+                    title={title}
+                    disc={disc}
+                  />
                 </>
               );
             })}
           </div>
         </div>
-      </>
-      
-    );
-  };
-  
-  export default Projects;
+      </section>
+    </>
+  );
+};
+
+export default Projects;
